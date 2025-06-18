@@ -127,3 +127,7 @@ Route::put('/order/{id}/status', [OrderController::class, 'updateStatus']);
 
 // routes/api.php
 Route::get('/admin/statistics', [OrderController::class, 'statisticsAdmin']);
+
+Route::options('/{any}', function (Request $request) {
+    return response()->json([], 200);
+})->where('any', '.*');
