@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://laravelecommerceweb-frontend.vercel.app'],
+    'allowed_origins' => ['https://laravelecommerceweb-frontend.vercel.app','http://localhost:3000'],
 
     'allowed_origins_patterns' => [],
 
